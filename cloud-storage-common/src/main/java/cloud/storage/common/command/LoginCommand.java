@@ -1,19 +1,17 @@
-package cloud.storage.command;
+package cloud.storage.common.command;
 
 import io.netty.buffer.ByteBuf;
-import lombok.Getter;
 
-@Getter
-public class RegisterCommand extends AbstractCommand{
-    private String username;
-    private String password;
+public class LoginCommand extends AbstractCommand{
+    public String username;
+    public String password;
 
-    public RegisterCommand() {
-        this.commandName = CommandName.REGISTER;
+    public LoginCommand() {
+        this.commandName = CommandName.LOGIN;
     }
 
-    public RegisterCommand(String username, String password) {
-        this.commandName = CommandName.REGISTER;
+    public LoginCommand(String username, String password) {
+        this.commandName = CommandName.LOGIN;
         this.username = username;
         this.password = password;
     }
@@ -30,7 +28,7 @@ public class RegisterCommand extends AbstractCommand{
     @Override
     public AbstractCommand decode(ByteBuf buf) {
         int usernameLength = buf.readInt();
-        username = buf.readCharSequence(usernameLength, charset).toString();
+        username = buf.readCharSequence(usernameLength,charset).toString();
         int passwordLength = buf.readInt();
         password = buf.readCharSequence(passwordLength, charset).toString();
         return this;

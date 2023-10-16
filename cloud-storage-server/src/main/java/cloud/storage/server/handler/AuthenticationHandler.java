@@ -1,6 +1,6 @@
 package cloud.storage.server.handler;
 
-import cloud.storage.command.AbstractCommand;
+import cloud.storage.common.command.AbstractCommand;
 import cloud.storage.server.executor.CommandExecutor;
 import cloud.storage.server.service.AuthenticationService;
 import cloud.storage.server.service.CommandService;

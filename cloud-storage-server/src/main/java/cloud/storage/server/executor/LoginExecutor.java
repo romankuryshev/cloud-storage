@@ -1,8 +1,8 @@
 package cloud.storage.server.executor;
 
-import cloud.storage.command.AbstractCommand;
-import cloud.storage.command.LoginCommand;
-import cloud.storage.command.MessageCommand;
+import cloud.storage.common.command.AbstractCommand;
+import cloud.storage.common.command.LoginCommand;
+import cloud.storage.common.command.MessageCommand;
 import cloud.storage.server.service.AuthenticationService;
 import io.netty.channel.ChannelHandlerContext;
 

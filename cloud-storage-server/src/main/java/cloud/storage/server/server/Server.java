@@ -1,7 +1,7 @@
 package cloud.storage.server.server;
 
-import cloud.storage.command.codec.CommandDecoder;
-import cloud.storage.command.codec.CommandEncoder;
+import cloud.storage.common.codec.CommandDecoder;
+import cloud.storage.common.codec.CommandEncoder;
 import cloud.storage.server.handler.AuthenticationHandler;
 import cloud.storage.server.handler.CommandHandler;
 import io.netty.bootstrap.ServerBootstrap;

@@ -1,6 +1,6 @@
 package cloud.storage.server.executor;
 
-import cloud.storage.command.AbstractCommand;
+import cloud.storage.common.command.AbstractCommand;
 import io.netty.channel.ChannelHandlerContext;
 
 /**

@@ -1,8 +1,8 @@
 package cloud.storage.client.handler;
 
 import cloud.storage.client.callback.Callback;
-import cloud.storage.command.AbstractCommand;
-import cloud.storage.command.MessageCommand;
+import cloud.storage.common.command.AbstractCommand;
+import cloud.storage.common.command.MessageCommand;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import javafx.application.Platform;

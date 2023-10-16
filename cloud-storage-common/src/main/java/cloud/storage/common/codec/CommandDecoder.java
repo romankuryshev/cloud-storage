@@ -1,6 +1,6 @@
-package cloud.storage.command.codec;
+package cloud.storage.common.codec;
 
-import cloud.storage.command.*;
+import cloud.storage.common.command.*;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ReplayingDecoder;

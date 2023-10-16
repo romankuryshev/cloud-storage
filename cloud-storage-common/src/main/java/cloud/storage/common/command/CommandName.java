@@ -1,4 +1,4 @@
-package cloud.storage.command;
+package cloud.storage.common.command;
 
 
 public enum CommandName {

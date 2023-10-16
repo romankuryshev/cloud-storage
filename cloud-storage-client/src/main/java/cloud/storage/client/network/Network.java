@@ -2,9 +2,9 @@ package cloud.storage.client.network;
 
 import cloud.storage.client.callback.Callback;
 import cloud.storage.client.handler.MessageReceiver;
-import cloud.storage.command.AbstractCommand;
-import cloud.storage.command.codec.CommandDecoder;
-import cloud.storage.command.codec.CommandEncoder;
+import cloud.storage.common.command.AbstractCommand;
+import cloud.storage.common.codec.CommandDecoder;
+import cloud.storage.common.codec.CommandEncoder;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;

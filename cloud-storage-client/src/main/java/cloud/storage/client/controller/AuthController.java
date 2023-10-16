@@ -1,8 +1,8 @@
 package cloud.storage.client.controller;
 
 import cloud.storage.client.network.Network;
-import cloud.storage.command.LoginCommand;
-import cloud.storage.command.RegisterCommand;
+import cloud.storage.common.command.LoginCommand;
+import cloud.storage.common.command.RegisterCommand;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
