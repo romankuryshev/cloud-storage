@@ -1,2 +1,5 @@
 rootProject.name = 'hw-3-netty'
+include 'cloud-storage-server'
+include 'cloud-storage-command'
+include 'cloud-storage-client'
 
