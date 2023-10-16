@@ -1,5 +1,6 @@
 package cloud.storage.common.command;
 
+import cloud.storage.common.enums.CommandName;
 import io.netty.buffer.ByteBuf;
 
 import java.io.Serializable;
@@ -21,9 +22,7 @@ public abstract class AbstractCommand implements Serializable {
      * Метод кодирует команду для передачи по сети.
      * @param buf ByteBuf в который передается команда.
      */
-    public void encode(ByteBuf buf) {
-        buf.writeInt(commandName.ordinal());
-    }
+    public abstract void encode(ByteBuf buf);
 
     /**
      * Метод декодирует команду.

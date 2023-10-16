@@ -1,10 +1,13 @@
 package cloud.storage.common.command;
 
+import cloud.storage.common.enums.CommandName;
 import io.netty.buffer.ByteBuf;
+import lombok.Getter;
 
+@Getter
 public class LoginCommand extends AbstractCommand{
-    public String username;
-    public String password;
+    private String username;
+    private String password;
 
     public LoginCommand() {
         this.commandName = CommandName.LOGIN;
@@ -18,7 +21,7 @@ public class LoginCommand extends AbstractCommand{
 
     @Override
     public void encode(ByteBuf buf) {
-        super.encode(buf);
+        buf.writeInt(commandName.ordinal());
         buf.writeInt(username.length());
         buf.writeCharSequence(username, charset);
         buf.writeInt(password.length());

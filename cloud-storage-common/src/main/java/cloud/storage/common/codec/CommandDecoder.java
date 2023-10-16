@@ -1,6 +1,7 @@
 package cloud.storage.common.codec;
 
 import cloud.storage.common.command.*;
+import cloud.storage.common.enums.CommandName;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ReplayingDecoder;
@@ -20,7 +21,7 @@ public class CommandDecoder extends ReplayingDecoder<Void> {
 
     /**
      * Метод декодирует команду.
-     * @param ctx           the {@link ChannelHandlerContext} which this {@link ByteToMessageDecoder} belongs to
+     * @param ctx           the {@link ChannelHandlerContext} which this belongs to
      * @param in            the {@link ByteBuf} from which to read data
      * @param out           the {@link List} to which decoded messages should be added
      * @throws Exception

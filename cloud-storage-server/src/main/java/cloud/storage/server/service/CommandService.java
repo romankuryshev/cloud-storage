@@ -1,6 +1,6 @@
 package cloud.storage.server.service;
 
-import cloud.storage.common.command.CommandName;
+import cloud.storage.common.enums.CommandName;
 import cloud.storage.server.executor.*;
 import java.util.EnumMap;
 

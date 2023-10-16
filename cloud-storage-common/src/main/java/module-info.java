@@ -6,4 +6,5 @@ module cloud.storage.command {
     requires static lombok;
     exports cloud.storage.common.codec;
     exports cloud.storage.common.command;
+    exports cloud.storage.common.enums;
 }

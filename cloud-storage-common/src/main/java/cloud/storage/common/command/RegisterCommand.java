@@ -1,5 +1,6 @@
 package cloud.storage.common.command;
 
+import cloud.storage.common.enums.CommandName;
 import io.netty.buffer.ByteBuf;
 import lombok.Getter;
 
@@ -20,7 +21,7 @@ public class RegisterCommand extends AbstractCommand{
 
     @Override
     public void encode(ByteBuf buf) {
-        super.encode(buf);
+        buf.writeInt(commandName.ordinal());
         buf.writeInt(username.length());
         buf.writeCharSequence(username, charset);
         buf.writeInt(password.length());
