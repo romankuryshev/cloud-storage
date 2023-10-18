@@ -26,7 +26,7 @@ tasks.withType(JavaCompile) {
 
 application {
   mainModule = 'cloud.storage.client'
-  mainClass = 'cloud.storage.client.HelloApplication'
+  mainClass = 'cloud.storage.client.ClientApp'
 }
 
 javafx {

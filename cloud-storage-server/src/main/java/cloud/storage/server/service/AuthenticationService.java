@@ -36,7 +36,6 @@ public class AuthenticationService {
     }
 
     public synchronized static boolean addNewUser(String username, String password) {
-        System.out.println(username + " " + password);
         if (users.containsKey(username)) {
             return false;
         }
