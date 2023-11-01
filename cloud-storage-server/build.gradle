@@ -1,0 +1,19 @@
+plugins{
+    id 'application'
+    id 'org.javamodularity.moduleplugin' version '1.8.12'
+}
+
+group 'cloud.storage'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = '18'
+targetCompatibility = '18'
+
+application {
+    mainModule = 'cloud.storage.server'
+    mainClass = 'cloud.storage.server.ServerApp'
+}
+
+dependencies {
+    implementation project(":cloud-storage-common")
+}
