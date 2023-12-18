@@ -1,15 +1,19 @@
-# cloud-storage-part-1-hw-3-romankuryshev
-Облачное хранилище.
+# Cloud-storage
+Cloud storage, for remote file storage. 
+The project includes a desktop client javafx application and a server application. For interaction is used Netty Framework.
 
-# Запуск сервера
-Для запуска сервера используется команда:
+## Stack:
+* Java Core
+* Netty Framework
+
+### Server startup
+To start the server from root directory using:
 ```
 ./gradlew :cloud-storage-server:run
 ```
 
-
-# Запуск клиента
-Для запуска клиента используется команда:
+### Client startup
+To start the client from root directory using:
 ```
 ./gradlew :cloud-storage-client:run
 ```
